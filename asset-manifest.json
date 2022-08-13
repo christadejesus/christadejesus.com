@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/christadejesus.com/static/css/main.d4004159.css",
-    "main.js": "/christadejesus.com/static/js/main.542647dd.js",
+    "main.js": "/christadejesus.com/static/js/main.6005eefd.js",
     "static/js/787.09e353b6.chunk.js": "/christadejesus.com/static/js/787.09e353b6.chunk.js",
     "static/media/mockup_project-landing-page.png": "/christadejesus.com/static/media/mockup_project-landing-page.bf808c293562fb4042ed.png",
     "static/media/screenshot-survey-form.png": "/christadejesus.com/static/media/screenshot-survey-form.6262ab424193cff50e0c.png",
@@ -13,11 +13,11 @@
     "static/media/wave-6.png": "/christadejesus.com/static/media/wave-6.82c571c1a2d2a957e237.png",
     "index.html": "/christadejesus.com/index.html",
     "main.d4004159.css.map": "/christadejesus.com/static/css/main.d4004159.css.map",
-    "main.542647dd.js.map": "/christadejesus.com/static/js/main.542647dd.js.map",
+    "main.6005eefd.js.map": "/christadejesus.com/static/js/main.6005eefd.js.map",
     "787.09e353b6.chunk.js.map": "/christadejesus.com/static/js/787.09e353b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4004159.css",
-    "static/js/main.542647dd.js"
+    "static/js/main.6005eefd.js"
   ]
 }
