@@ -102,7 +102,7 @@ const TopNav = () => {
   return (
     <NavWrapper>
       <nav className="nav-container">
-        <Link to="/">
+        <Link to="/" onClick={toggleNav}>
           <div className="logo-container">
             <span className="logo logo-first">Christa</span>
             <span className="logo logo-last">DeJesus</span>
