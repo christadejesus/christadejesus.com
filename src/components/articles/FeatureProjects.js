@@ -74,7 +74,7 @@ const FeatureProjects = () => {
               <Button
                 primary
                 as="a"
-                href="https://github.com/indychrista"
+                href="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -82,7 +82,7 @@ const FeatureProjects = () => {
               </Button>
               <Button
                 as="a"
-                href="https://github.com/indychrista"
+                href="https://github.com/indychrista/freecodecamp-random-quotes-machine"
                 target="_blank"
                 rel="noreferrer"
               >
