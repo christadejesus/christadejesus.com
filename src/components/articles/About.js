@@ -47,9 +47,9 @@ const About = (props) => {
             <div>
               <h2>Hello, I'm Christa!</h2>
               <p>
-                In a nutshell, I'm a former pro-photographer and photo retoucher
-                from Indianapolis, Indiana, who fell in love with code,
-                development, and graphic design. <FaHeart className="heart" />
+                In a nutshell, I'm a creative entrepreneur from Indianapolis,
+                Indiana, who fell in love with code, development, and graphic
+                design. <FaHeart className="heart" />
               </p>
               <Button primary>Read more</Button>
             </div>
