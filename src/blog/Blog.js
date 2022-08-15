@@ -1,13 +1,17 @@
 import MainContentWrapper from "../components/containers/MainContentWrapper";
 import Contact from "../components/articles/Contact";
-import PageBanner from "../components/banners/PageBanner";
+import StandardArticle from "../components/containers/StandardArticle";
+import AccentSolid from "../components/containers/AccentSolid";
 
 const Blog = () => {
   return (
     <>
-      <PageBanner title="The Blog"></PageBanner>
       <MainContentWrapper>
-        <p>Coming soon!</p>
+        <StandardArticle>
+          <AccentSolid>
+            <h1>Coming soon!</h1>
+          </AccentSolid>
+        </StandardArticle>
         <Contact />
       </MainContentWrapper>
     </>

@@ -1,16 +1,20 @@
 import MainContentWrapper from "./containers/MainContentWrapper";
 import FeatureProjects from "./articles/FeatureProjects";
 import Contact from "./articles/Contact";
-import PageBanner from "./banners/PageBanner";
+import StandardArticle from "./containers/StandardArticle";
+import AccentSolid from "./containers/AccentSolid";
 
 const Projects = () => {
   return (
-    <>
-      <PageBanner title="Projects"></PageBanner>
-      <MainContentWrapper>
-        <FeatureProjects />
-
-        <article className="main-article accent-article">
+    <MainContentWrapper>
+      <StandardArticle>
+        <AccentSolid>
+          <h1>Projects</h1>
+        </AccentSolid>
+      </StandardArticle>
+      <FeatureProjects />
+      <StandardArticle>
+        <AccentSolid>
           <div>
             <h2>Development Projects</h2>
             <p>Coming soon!</p>
@@ -23,10 +27,10 @@ const Projects = () => {
             <h2>Other Projects</h2>
             <p>Coming soon!</p>
           </div>
-        </article>
-        <Contact />
-      </MainContentWrapper>
-    </>
+        </AccentSolid>
+      </StandardArticle>
+      <Contact />
+    </MainContentWrapper>
   );
 };
 

@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { FaTwitter, FaFacebookF } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
+import StandardArticle from "../containers/StandardArticle";
+import AccentBorder from "../containers/AccentBorder";
 
-const ContactWrapper = styled.article`
+const Wrapper = styled.div`
   .contact-flex {
     display: flex;
     flex-direction: column;
@@ -56,52 +58,56 @@ const ContactWrapper = styled.article`
 
 const Contact = () => {
   return (
-    <ContactWrapper className="main-article" id="contact">
-      <div className="contact-flex">
-        <header className="contact-header">
-          <h2>Let's Connect</h2>
-          <p>
-            The best way to contact me and see the latest updates is to connect
-            on any of the platforms below.
-          </p>
-        </header>
-        <section className="social-container">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noreferrer"
-            class="social-link"
-          >
-            <div class="social-icon">
-              <FaFacebookF />
-            </div>{" "}
-            Join on Facebook
-          </a>
-          <a
-            href="https://twitter.com/christa_dev"
-            target="_blank"
-            rel="noreferrer"
-            class="social-link"
-          >
-            <div class="social-icon">
-              <FaTwitter />
-            </div>{" "}
-            Follow on Twitter
-          </a>
-          <a
-            href="https://github.com/indychrista"
-            target="_blank"
-            rel="noreferrer"
-            class="social-link"
-          >
-            <div class="social-icon">
-              <FiGithub />
-            </div>
-            Connect on Github
-          </a>
-        </section>
-      </div>
-    </ContactWrapper>
+    <StandardArticle id="contact">
+      <AccentBorder>
+        <Wrapper>
+          <div className="contact-flex">
+            <header className="contact-header">
+              <h2>Let's Connect</h2>
+              <p>
+                The best way to contact me and see the latest updates is to
+                connect on any of the social media platforms below.
+              </p>
+            </header>
+            <section className="social-container">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link"
+              >
+                <div class="social-icon">
+                  <FaFacebookF />
+                </div>{" "}
+                Join on Facebook
+              </a>
+              <a
+                href="https://twitter.com/christa_dev"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link"
+              >
+                <div class="social-icon">
+                  <FaTwitter />
+                </div>{" "}
+                Follow on Twitter
+              </a>
+              <a
+                href="https://github.com/indychrista"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link"
+              >
+                <div class="social-icon">
+                  <FiGithub />
+                </div>
+                Connect on Github
+              </a>
+            </section>
+          </div>
+        </Wrapper>
+      </AccentBorder>
+    </StandardArticle>
   );
 };
 

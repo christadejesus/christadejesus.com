@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroBackground from "../../assets/wave-6.png";
+import heroBackground from "../../assets/wave1.png";
 import heroGraphic from "../../assets/desk.png";
 
 const HeroWrapper = styled.div`

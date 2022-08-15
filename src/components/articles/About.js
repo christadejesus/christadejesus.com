@@ -2,8 +2,10 @@ import authorImg from "../../assets/Christa.jpg";
 import styled from "styled-components";
 import { FaHeart } from "react-icons/fa";
 import Button from "../buttons/Button";
+import StandardArticle from "../containers/StandardArticle";
+import AccentSolid from "../containers/AccentSolid";
 
-const AboutWrapper = styled.article`
+const Wrapper = styled.div`
   .about-flex {
     display: flex;
     flex-direction: column;
@@ -31,27 +33,30 @@ const AboutWrapper = styled.article`
   @media screen and (min-width: 900px) {
     .about-flex {
       flex-direction: row;
-      padding: 40px;
     }
   }
 `;
 
 const About = (props) => {
   return (
-    <AboutWrapper className="main-article accent-article" id="about">
-      <div className="about-flex">
-        <img src={authorImg} alt="Christa DeJesus" className="about-img" />
-        <div>
-          <h2>Hello, I'm Christa!</h2>
-          <p>
-            In a nutshell, I'm a former pro-photographer and photo retoucher
-            from Indianapolis, Indiana, who fell in love with code, development,
-            and graphic design. <FaHeart className="heart" />
-          </p>
-          <Button primary>Read more</Button>
-        </div>
-      </div>
-    </AboutWrapper>
+    <StandardArticle id="about">
+      <AccentSolid>
+        <Wrapper>
+          <div className="about-flex">
+            <img src={authorImg} alt="Christa DeJesus" className="about-img" />
+            <div>
+              <h2>Hello, I'm Christa!</h2>
+              <p>
+                In a nutshell, I'm a former pro-photographer and photo retoucher
+                from Indianapolis, Indiana, who fell in love with code,
+                development, and graphic design. <FaHeart className="heart" />
+              </p>
+              <Button primary>Read more</Button>
+            </div>
+          </div>
+        </Wrapper>
+      </AccentSolid>
+    </StandardArticle>
   );
 };
 
