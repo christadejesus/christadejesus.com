@@ -37,7 +37,7 @@ const DevProjects = (props) => {
           detail5="React Icons"
           detail6="Github Pages"
           repoUrl="https://github.com/indychrista/freecodecamp-random-quotes-machine/tree/main"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+          demoUrl="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
         />
         <ProjectGridCardMore
           imgUrl={projectImg3}
@@ -47,8 +47,8 @@ const DevProjects = (props) => {
           detail2="Flexbox"
           detail4="Github Pages"
           detail5="Remix Icons"
-          repoUrl="https://github.com/indychrista/freecodecamp-random-quotes-machine/tree/main"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
+          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg4}
@@ -58,7 +58,7 @@ const DevProjects = (props) => {
           detail2="HTML Form"
           detail4="Flexbox"
           detail5="Fixed background image"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm/tree/main"
+          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
           demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
         />
       </Grid3Column>

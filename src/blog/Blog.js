@@ -1,7 +1,6 @@
 import MainContentWrapper from "../components/containers/MainContentWrapper";
 import Contact from "../components/articles/Contact";
 import StandardArticle from "../components/containers/StandardArticle";
-import AccentSolid from "../components/containers/AccentSolid";
 import PageBanner from "../components/banners/PageBanner";
 
 const Blog = () => {
