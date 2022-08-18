@@ -3,9 +3,9 @@ import projectImg1 from "../../assets/mockup_project-landing-page.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
 import projectImg3 from "../../assets/screenshot-tribute-page.png";
 import projectImg4 from "../../assets/screenshot-survey-form.png";
-import ProjectGrid from "../containers/ProjectGrid";
-import Button from "../buttons/Button";
+import Grid4Column from "../containers/Grid4Column";
 import StandardArticle from "../containers/StandardArticle";
+import ProjectGridCard from "../containers/ProjectGridCard";
 
 const Wrapper = styled.div`
   h3 {
@@ -40,112 +40,36 @@ const FeatureProjects = () => {
     <Wrapper>
       <StandardArticle id="feature-projects">
         <h2>Featured Projects</h2>
-        <ProjectGrid>
-          <div className="project-card">
-            <img src={projectImg1} alt="Product Landing Page on laptop" />
-            <div className="project-info">
-              <h3>Landing Page</h3>
-              <div className="h3-accent"></div>
-              <div className="project-btns">
-                <Button
-                  primary
-                  as="a"
-                  href="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit the demo
-                </Button>
-                <Button
-                  as="a"
-                  href="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View the code
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div className="project-card">
-            <img src={projectImg2} alt="Random Quotes Generator on laptop" />
-            <div className="project-info">
-              <h3>Random Quotes</h3>
-              <div className="h3-accent"></div>
-              <div className="project-btns">
-                <Button
-                  primary
-                  as="a"
-                  href="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit the demo
-                </Button>
-                <Button
-                  as="a"
-                  href="https://github.com/indychrista/freecodecamp-random-quotes-machine"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View the code
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div className="project-card">
-            <img src={projectImg3} alt="Tribute Page on tablet" />
-            <div className="project-info">
-              <h3>Tribute Page</h3>
-              <div className="h3-accent"></div>
-              <div className="project-btns">
-                <Button
-                  primary
-                  as="a"
-                  href="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit the demo
-                </Button>
-                <Button
-                  as="a"
-                  href="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View the code
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div className="project-card">
-            <img src={projectImg4} alt="Survey Form on mobile" />
-            <div className="project-info">
-              <h3>Survey Form</h3>
-              <div className="h3-accent"></div>
-              <div className="project-btns">
-                <Button
-                  primary
-                  as="a"
-                  href="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit the demo
-                </Button>
-                <Button
-                  as="a"
-                  href="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View the code
-                </Button>
-              </div>
-            </div>
-          </div>
-        </ProjectGrid>
+        <Grid4Column>
+          <ProjectGridCard
+            imgUrl={projectImg1}
+            imgAlt="Product Landing Page on laptop"
+            projectName="Landing Page"
+            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
+            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+          />
+          <ProjectGridCard
+            imgUrl={projectImg2}
+            imgAlt="Random Quotes Generator on laptop"
+            projectName="Random Quotes"
+            repoUrl="https://github.com/indychrista/freecodecamp-random-quotes-machine/tree/main"
+            demoUrl="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
+          />
+          <ProjectGridCard
+            imgUrl={projectImg3}
+            imgAlt="Tribute Page on tablet"
+            projectName="Tribute Page"
+            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
+            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
+          />
+          <ProjectGridCard
+            imgUrl={projectImg4}
+            imgAlt="Survey Form on mobile"
+            projectName="Survey Form"
+            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
+            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
+          />
+        </Grid4Column>
       </StandardArticle>
     </Wrapper>
   );

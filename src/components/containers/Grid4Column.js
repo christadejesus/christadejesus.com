@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Grid2Column = styled.div`
+const Grid4Column = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 40px;
@@ -15,4 +15,4 @@ const Grid2Column = styled.div`
   }
 `;
 
-export default Grid2Column;
+export default Grid4Column;

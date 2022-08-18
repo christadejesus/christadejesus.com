@@ -8,7 +8,7 @@ const NavWrapper = styled.div`
   height: 60px;
   font-size: 1.8rem;
   background: var(--color-neutral-mdlt);
-  border-bottom: 1px solid var(--color-neutral-wht);
+  border-bottom: 1px solid var(--color-neutral-lt);
 
   .nav-container {
     display: flex;
@@ -58,18 +58,19 @@ const NavWrapper = styled.div`
       top: 60px;
       flex-direction: column;
       text-align: center;
-      padding: 10px;
+      padding: 40px 10px;
       background: linear-gradient(
-        var(--color-primary-1),
-        var(--color-primary-2)
+        var(--color-neutral-lt),
+        var(--color-neutral-mdlt)
       );
+      border-bottom: 1px solid var(--color-neutral-lt);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
       width: 0;
       height: 0;
       opacity: 0;
       overflow: hidden;
     }
     .nav-links a {
-      color: var(--color-neutral-lt);
     }
     .nav-links a:hover {
       opacity: initial;
@@ -78,7 +79,7 @@ const NavWrapper = styled.div`
       padding: 10px;
     }
     .nav-link:hover {
-      background: var(--color-primary-2);
+      background: var(--color-neutral-wht);
     }
     .active {
       width: 100%;

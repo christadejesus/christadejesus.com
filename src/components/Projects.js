@@ -1,24 +1,17 @@
 import MainContentWrapper from "./containers/MainContentWrapper";
-import FeatureProjects from "./articles/FeatureProjects";
+import DevProjects from "./articles/DevProjects";
 import Contact from "./articles/Contact";
 import StandardArticle from "./containers/StandardArticle";
 import AccentSolid from "./containers/AccentSolid";
+import PageBanner from "./banners/PageBanner";
 
 const Projects = () => {
   return (
     <MainContentWrapper>
+      <PageBanner title="Projects" />
+      <DevProjects />
       <StandardArticle>
         <AccentSolid>
-          <h1>Projects</h1>
-        </AccentSolid>
-      </StandardArticle>
-      <FeatureProjects />
-      <StandardArticle>
-        <AccentSolid>
-          <div>
-            <h2>Development Projects</h2>
-            <p>Coming soon!</p>
-          </div>
           <div>
             <h2>Design Projects</h2>
             <p>Coming soon!</p>

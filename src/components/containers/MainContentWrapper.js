@@ -13,7 +13,8 @@ const MainContentWrapper = styled.div`
 
   p,
   h2,
-  h3 {
+  h3,
+  h4 {
     margin-bottom: 20px;
   }
   h1,
