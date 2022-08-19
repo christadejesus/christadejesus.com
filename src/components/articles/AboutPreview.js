@@ -1,6 +1,7 @@
 import authorImg from "../../assets/Christa.jpg";
 import styled from "styled-components";
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import Button from "../buttons/Button";
 import StandardArticle from "../containers/StandardArticle";
 import AccentSolid from "../containers/AccentSolid";
@@ -51,7 +52,9 @@ const AboutPreview = (props) => {
                 Indiana, who fell in love with code, development, and graphic
                 design. <FaHeart className="heart" />
               </p>
-              <Button primary>Read more</Button>
+              <Link to="/about">
+                <Button primary>Read more</Button>
+              </Link>
             </div>
           </div>
         </Wrapper>
