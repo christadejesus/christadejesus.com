@@ -71,7 +71,7 @@ const Contact = () => {
             </header>
             <section className="social-container">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/christa.dev/"
                 target="_blank"
                 rel="noreferrer"
                 class="social-link"

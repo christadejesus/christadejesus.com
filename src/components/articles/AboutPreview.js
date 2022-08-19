@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const About = (props) => {
+const AboutPreview = (props) => {
   return (
     <StandardArticle id="about">
       <AccentSolid>
@@ -60,4 +60,4 @@ const About = (props) => {
   );
 };
 
-export default About;
+export default AboutPreview;

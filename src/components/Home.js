@@ -1,8 +1,9 @@
 import MainContentWrapper from "./containers/MainContentWrapper";
-import About from "./articles/About";
+import AboutPreview from "./articles/AboutPreview";
 import Contact from "./articles/Contact";
 import FeatureProjects from "./articles/FeatureProjects";
 import Hero from "./banners/Hero";
+import RecentArticles from "./articles/RecentArticles";
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <Hero />
       <MainContentWrapper>
         <FeatureProjects />
-        <About />
+        <AboutPreview />
+        <RecentArticles />
         <Contact />
       </MainContentWrapper>
     </>

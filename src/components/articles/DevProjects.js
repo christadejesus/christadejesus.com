@@ -3,6 +3,7 @@ import projectImg1 from "../../assets/mockup_project-landing-page.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
 import projectImg3 from "../../assets/screenshot-tribute-page.png";
 import projectImg4 from "../../assets/screenshot-survey-form.png";
+import projectImg5 from "../../assets/mockup_techdocs.png";
 import ProjectGridCardMore from "../containers/ProjectGridCardMore";
 import Grid3Column from "../containers/Grid3Column";
 
@@ -60,6 +61,17 @@ const DevProjects = (props) => {
           detail5="Fixed background image"
           repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
           demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
+        />
+        <ProjectGridCardMore
+          imgUrl={projectImg5}
+          imgAlt="Technical Documentation on laptop screen"
+          projectName="Technical Documentation"
+          detail1="HTML/CSS"
+          detail2="Scrolling Navbar"
+          detail4="Fixed navigation"
+          detail5="Responsive layout"
+          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TechnicalDocumentation"
+          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TechnicalDocumentation/index.html"
         />
       </Grid3Column>
     </Wrapper>

@@ -119,7 +119,9 @@ const TopNav = () => {
           <Link to="/blog" className="nav-link" onClick={toggleNav}>
             Blog
           </Link>
-
+          <Link to="/about" className="nav-link" onClick={toggleNav}>
+            About
+          </Link>
           <HashLink to="#contact" className="nav-link" onClick={toggleNav}>
             Contact
           </HashLink>
