@@ -2,7 +2,7 @@ import styled from "styled-components";
 import projectImg1 from "../../assets/mockup_project-landing-page.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
 import projectImg3 from "../../assets/screenshot-tribute-page.png";
-import projectImg4 from "../../assets/screenshot-survey-form.png";
+import projectImg5 from "../../assets/mockup_personal_portfolio_page.png";
 import Grid4Column from "../containers/Grid4Column";
 import StandardArticle from "../containers/StandardArticle";
 import ProjectGridCard from "../containers/ProjectGridCard";
@@ -42,13 +42,6 @@ const FeatureProjects = () => {
         <h2>Featured Projects</h2>
         <Grid4Column>
           <ProjectGridCard
-            imgUrl={projectImg1}
-            imgAlt="Product Landing Page on laptop"
-            projectName="Landing Page"
-            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
-            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
-          />
-          <ProjectGridCard
             imgUrl={projectImg2}
             imgAlt="Random Quotes Generator on laptop"
             projectName="Random Quotes"
@@ -56,18 +49,25 @@ const FeatureProjects = () => {
             demoUrl="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
           />
           <ProjectGridCard
+            imgUrl={projectImg5}
+            imgAlt="Personal Portfolio Page on mobile"
+            projectName="Portfolio Page"
+            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/PersonalPortfolioPage"
+            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/PersonalPortfolioPage/index.html"
+          />
+          <ProjectGridCard
+            imgUrl={projectImg1}
+            imgAlt="Product Landing Page on laptop"
+            projectName="Landing Page"
+            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
+            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+          />
+          <ProjectGridCard
             imgUrl={projectImg3}
             imgAlt="Tribute Page on tablet"
             projectName="Tribute Page"
             repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
             demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
-          />
-          <ProjectGridCard
-            imgUrl={projectImg4}
-            imgAlt="Survey Form on mobile"
-            projectName="Survey Form"
-            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
-            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
           />
         </Grid4Column>
       </StandardArticle>

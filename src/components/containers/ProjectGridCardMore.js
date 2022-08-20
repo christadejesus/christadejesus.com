@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     justify-content: center;
     padding-bottom: 20px;
   }
-  .project-card img {
+  .project-img {
     border-radius: 4px 4px 0px 0px;
   }
   .project-info {
@@ -53,7 +53,7 @@ const Wrapper = styled.div`
 const ProjectGridCardMore = (props) => {
   return (
     <Wrapper className="project-card">
-      <img src={props.imgUrl} alt={props.imgAlt} />
+      <img src={props.imgUrl} alt={props.imgAlt} className="project-img" />
       <div className="project-info">
         <h3>{props.projectName}</h3>
         <div className="h3-accent"></div>
