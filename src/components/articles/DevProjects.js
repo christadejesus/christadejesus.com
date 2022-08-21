@@ -5,6 +5,7 @@ import projectImg3 from "../../assets/screenshot-tribute-page.png";
 import projectImg4 from "../../assets/screenshot-survey-form.png";
 import projectImg5 from "../../assets/mockup_techdocs.png";
 import projectImg6 from "../../assets/mockup_personal_portfolio_page.png";
+import projectImg7 from "../../assets/mockup-palindrome-checker.png";
 import ProjectGridCardMore from "../containers/ProjectGridCardMore";
 import Grid3Column from "../containers/Grid3Column";
 
@@ -38,6 +39,19 @@ const DevProjects = (props) => {
           detail6="Github Pages"
           repoUrl="https://github.com/indychrista/freecodecamp-random-quotes-machine/tree/main"
           demoUrl="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
+        />
+        <ProjectGridCardMore
+          imgUrl={projectImg7}
+          imgAlt="Palindrome Checker on tablet"
+          projectName="Palindrome Checker"
+          detail1="HTML/CSS/JS"
+          detail2="Custom SVGs"
+          detail3="Responsive Layout"
+          detail4="FA Icons"
+          detail5="HTML Form"
+          detail6="Custom Banner"
+          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
+          demoUrl="https://indychrista.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg1}

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import projectImg1 from "../../assets/mockup_project-landing-page.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
-import projectImg3 from "../../assets/screenshot-tribute-page.png";
+import projectImg3 from "../../assets/mockup-palindrome-checker.png";
 import projectImg5 from "../../assets/mockup_personal_portfolio_page.png";
 import Grid4Column from "../containers/Grid4Column";
 import StandardArticle from "../containers/StandardArticle";
@@ -64,10 +64,10 @@ const FeatureProjects = () => {
           />
           <ProjectGridCard
             imgUrl={projectImg3}
-            imgAlt="Tribute Page on tablet"
-            projectName="Tribute Page"
-            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
-            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
+            imgAlt="Palindrome Checker on tablet"
+            projectName="Palindrome Checker"
+            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
+            demoUrl="https://indychrista.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
           />
         </Grid4Column>
       </StandardArticle>
