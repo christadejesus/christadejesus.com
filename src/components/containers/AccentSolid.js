@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const AccentSolid = styled.div`
-  background: var(--color-neutral-lt);
+  background: var(--neutral-lt);
   padding: 40px 20px;
   border-radius: 5px;
   width: 100%;

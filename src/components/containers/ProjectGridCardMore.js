@@ -8,8 +8,8 @@ const Wrapper = styled.div`
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color-neutral-mdlt);
 
-  h3 {
-    margin-bottom: 5px;
+  .divider {
+    margin: 0 0 20px 0;
   }
   .project-btns {
     display: flex;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     gap: 10px;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 10px 10px 40px 10px;
   }
   .project-img {
     border-radius: 4px 4px 0px 0px;
@@ -28,9 +28,9 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 10px 10px 0px 10px;
+    padding: 40px 20px 0px 20px;
   }
-  .project-about-flex {
+  .project-details-flex {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -42,11 +42,13 @@ const Wrapper = styled.div`
   .project-details {
     height: 100%;
   }
-  h4 {
-    color: var(--color-primary-1);
-  }
   ul {
     margin-left: 20px;
+  }
+  @media screen and (min-width: 700px) {
+    .project-details-flex {
+      flex-direction: column;
+    }
   }
 `;
 
@@ -56,10 +58,9 @@ const ProjectGridCardMore = (props) => {
       <img src={props.imgUrl} alt={props.imgAlt} className="project-img" />
       <div className="project-info">
         <h3>{props.projectName}</h3>
-        <div className="h3-accent"></div>
+        <div className="divider"></div>
         <div className="project-details">
-          <h4>Highlights:</h4>
-          <div className="project-about-flex">
+          <div className="project-details-flex">
             <ul>
               {props.detail1 ? <li>{props.detail1}</li> : <br />}
               {props.detail2 ? <li>{props.detail2}</li> : <br />}

@@ -1,40 +1,65 @@
 /* RESET */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Set all images to not exceed 100% of their parent element */
+    img {
+        max-width: 100%;
+    }
 :root {
     /* COLOR VARIABLES */
-    --color-primary-1: #178889;
-    --color-primary-2: #05a1a1;
-    --color-accent-1: #f5a873;
-    --color-accent-2: #ed6e58;
+    --primary-1: #178889;
+    --primary-2: #05a1a1;
+    --accent-1: #f5a873;
+    --accent-2: #ed6e58;
 
-    --color-neutral-dk: #000;
-    --color-neutral-mddk: #494339;
-    --color-neutral-md: #a89e8c;
-    --color-neutral-mdlt: #f0e9e3;
-    --color-neutral-lt: #faf6f3;
-    --color-neutral-wht: #fff;
+    --neutral-black: #222;
+    --neutral-dk: #575757;
+    --neutral-mddk: #8C8C8B;
+    --neutral-md: #C1C1BF;
+    --neutral-mdlt: #DCDBD9;
+    --neutral-lt: #F6F5F3;
+    --neutral-white: #fff;
 
     /* FONT VARIABLES*/
-    --font-standard: 'Montserrat', sans-serif;
-    --font-accent: 'Lato', sans-serif;
-    --font-cursive: 'Square Peg', cursive;
+    --font-standard: 'Poppins', sans-serif;
+    --font-cursive: 'Homemade Apple', cursive;
 
     font-size: 10px; /* set base font-size for easy rem calculations */
     font-family: var(--font-standard);
 } 
 
 /* MAIN STYLES */
-/* Set all images to not exceed 100% of their parent element */
-img {
-    max-width: 100%;
+body {
+    font-size: 1.8rem;
 }
+p,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
 a {
     text-decoration: none;
 }    
@@ -44,10 +69,25 @@ a {
     cursor: pointer;
 }
 
-.h3-accent {
-    height: 4px;
-    width: 50px;
-    background: var(--color-primary-1);
+/* REUSABLE */
+/* thick colorful underline */
+.heading-accent {
+    height: 5px;
+    width: 60px;
+    background: var(--accent-2);
     margin-bottom: 20px;
+    margin-top: -20px;
 }
- 
+/* thin neutral underline */
+.divider {
+    height: 1px;
+    width: 40px;
+    background: var(--neutral-md);
+    margin: 20px 0 40px 0;
+}
+.heart-icon {
+    color: var(--accent-2);
+}
+  .coffee-icon {
+    color: var(--primary-2);
+  } 

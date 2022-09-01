@@ -8,9 +8,6 @@ import StandardArticle from "../containers/StandardArticle";
 import ProjectGridCard from "../containers/ProjectGridCard";
 
 const Wrapper = styled.div`
-  h3 {
-    margin-bottom: 5px;
-  }
   .project-btns {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +19,7 @@ const Wrapper = styled.div`
   .project-card {
     border-radius: 5px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--color-neutral-mdlt);
+    border: 1px solid var(--neutral-mdlt);
   }
   .project-card img {
     border-radius: 4px 4px 0px 0px;
@@ -40,6 +37,7 @@ const FeatureProjects = () => {
     <Wrapper>
       <StandardArticle id="feature-projects">
         <h2>Featured Projects</h2>
+        <div className="heading-accent"></div>
         <Grid4Column>
           <ProjectGridCard
             imgUrl={projectImg2}

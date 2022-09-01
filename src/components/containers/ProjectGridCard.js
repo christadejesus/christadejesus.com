@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 0px 10px;
+    padding: 20px;
   }
 `;
 
@@ -34,7 +34,7 @@ const ProjectGridCard = (props) => {
       <img src={props.imgUrl} alt={props.imgAlt} />
       <div className="project-info">
         <h3>{props.projectName}</h3>
-        <div className="h3-accent"></div>
+        <div className="divider"></div>
         <div className="project-btns">
           <Button
             primary

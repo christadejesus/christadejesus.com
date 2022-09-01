@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { SiFacebook, SiTwitter, SiGithub } from "react-icons/si";
 import { RiMenuFill } from "react-icons/ri";
 
 const NavWrapper = styled.div`
   padding: 0px 40px;
-  height: 60px;
+  height: 70px;
   font-size: 1.8rem;
-  background: var(--color-neutral-mdlt);
-  border-bottom: 1px solid var(--color-neutral-lt);
+  color: var(--neutral-lt);
+  background: var(--neutral-black);
+  border-bottom: 1px solid var(--neutral-lt);
 
   .nav-container {
     display: flex;
@@ -22,28 +23,39 @@ const NavWrapper = styled.div`
     flex-direction: row;
     gap: 20px;
   }
-  .nav-links a {
+  .nav-link {
     color: var(--color-neutral-dk);
     text-transform: lowercase;
   }
-  .nav-links a:hover {
-    opacity: 80%;
+  .nav-link:hover {
+    color: var(--primary-2);
   }
   .logo {
     display: block;
     line-height: 1;
-    color: var(--color-neutral-dk);
-    font-family: var(--font-accent);
-    font-size: 2rem;
+    color: var(--neutral-lt);
+    font-family: var(--font-standard);
     text-transform: uppercase;
+    font-size: 1.8rem;
     letter-spacing: 0.05rem;
-    font-weight: 500;
+    font-weight: 600;
   }
-
+  .social-container {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .social-link {
+    font-size: 2rem;
+    color: var(--primary-2);
+  }
+  .social-link:hover {
+    color: var(--neutral-lt);
+  }
   .menu-btn {
     display: none;
-    font-size: 2rem;
-    color: var(--color-neutral-dk);
+    font-size: 2.4rem;
+    color: var(--neutral-lt);
   }
 
   /* MEDIA QUERIES */
@@ -59,35 +71,29 @@ const NavWrapper = styled.div`
       flex-direction: column;
       text-align: center;
       padding: 40px 10px;
-      background: linear-gradient(
-        var(--color-neutral-lt),
-        var(--color-neutral-mdlt)
-      );
-      border-bottom: 1px solid var(--color-neutral-lt);
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      background: var(--neutral-black);
       width: 0;
       height: 0;
       opacity: 0;
       overflow: hidden;
     }
-    .nav-links a {
-    }
-    .nav-links a:hover {
-      opacity: initial;
-    }
     .nav-link {
       padding: 10px;
-    }
-    .nav-link:hover {
-      background: var(--color-neutral-wht);
+      font-size: 2rem;
     }
     .active {
       width: 100%;
-      height: initial;
+      height: 100vh;
       opacity: initial;
     }
     .icon-active {
-      opacity: 50%;
+      color: var(--primary-2);
+    }
+    .social-container {
+      gap: 20px;
+    }
+    .social-link {
+      font-size: 3rem;
     }
   }
 `;
@@ -116,15 +122,39 @@ const TopNav = () => {
           <Link to="/projects" className="nav-link" onClick={toggleNav}>
             Projects
           </Link>
-          <Link to="/blog" className="nav-link" onClick={toggleNav}>
+          <a
+            href="https://blog.christadejesus.com"
+            className="nav-link"
+            onClick={toggleNav}
+          >
             Blog
-          </Link>
-          <Link to="/about" className="nav-link" onClick={toggleNav}>
-            About
-          </Link>
-          <HashLink to="#contact" className="nav-link" onClick={toggleNav}>
-            Contact
-          </HashLink>
+          </a>
+          <div className="social-container">
+            <a
+              href="https://www.facebook.com/christa.dev/"
+              target="_blank"
+              rel="noreferrer"
+              class="social-link"
+            >
+              <SiFacebook />
+            </a>
+            <a
+              href="https://twitter.com/christa_dev"
+              target="_blank"
+              rel="noreferrer"
+              class="social-link"
+            >
+              <SiTwitter />
+            </a>
+            <a
+              href="https://github.com/indychrista"
+              target="_blank"
+              rel="noreferrer"
+              class="social-link"
+            >
+              <SiGithub />
+            </a>
+          </div>
         </div>
         <button class="btn menu-btn" id="menu-btn" onClick={toggleNav}>
           <RiMenuFill />
