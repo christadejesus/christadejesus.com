@@ -95,7 +95,10 @@ const Footer = () => {
         <Link to="/projects" className="footer-link">
           Projects
         </Link>
-        <a href="https://blog.christadejesus.com" className="footer-link">
+        <a
+          href="https://christadejesusblog.gatsbyjs.io/"
+          className="footer-link"
+        >
           Blog
         </a>
       </div>

@@ -123,7 +123,7 @@ const TopNav = () => {
             Projects
           </Link>
           <a
-            href="https://blog.christadejesus.com"
+            href="https://christadejesusblog.gatsbyjs.io/"
             className="nav-link"
             onClick={toggleNav}
           >
