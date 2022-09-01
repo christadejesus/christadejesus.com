@@ -63,7 +63,7 @@ const FeatureProjects = () => {
           <ProjectGridCard
             imgUrl={projectImg3}
             imgAlt="Palindrome Checker on tablet"
-            projectName="Palindrome Checker"
+            projectName="Palindrome Check"
             repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
             demoUrl="https://indychrista.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
           />

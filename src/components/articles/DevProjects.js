@@ -43,7 +43,7 @@ const DevProjects = (props) => {
         <ProjectGridCardMore
           imgUrl={projectImg7}
           imgAlt="Palindrome Checker on tablet"
-          projectName="Palindrome Checker"
+          projectName="Palindrome Check"
           detail1="HTML/CSS/JS"
           detail2="Custom SVGs"
           detail3="Responsive Layout"
@@ -91,7 +91,7 @@ const DevProjects = (props) => {
         <ProjectGridCardMore
           imgUrl={projectImg5}
           imgAlt="Technical Documentation on laptop screen"
-          projectName="Technical Documentation"
+          projectName="Tech Docs"
           detail1="HTML/CSS"
           detail2="Scrolling Navbar"
           detail4="Fixed navigation"

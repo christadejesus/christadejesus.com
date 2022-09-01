@@ -18,6 +18,7 @@ const FooterWrapper = styled.div`
   background: var(--neutral-black);
   h2 {
     color: var(--neutral-lt);
+    font-weight: 700;
   }
   .footer-links {
     display: flex;
@@ -46,13 +47,13 @@ const FooterWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    background: var(--neutral-lt);
+    background: var(--primary-2);
     color: var(--neutral-black);
     padding: 8px;
     border-radius: 1px;
   }
   .social-link:hover {
-    background: var(--primary-2);
+    background: var(--neutral-lt);
     transform: translateY(-5px);
     transition: 300ms ease;
   }

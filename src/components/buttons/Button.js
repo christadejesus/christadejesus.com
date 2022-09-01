@@ -17,7 +17,7 @@ const Button = styled.button`
       ? "var(--neutral-black)"
       : props.secondary
       ? "var(--neutral-lt)"
-      : "var(--primary-1)"};
+      : "var(--primary-2)"};
   color: ${(props) =>
     props.secondary ? "var(--neutral-black)" : "var(--neutral-lt)"};
 

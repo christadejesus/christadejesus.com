@@ -36,9 +36,9 @@ const NavWrapper = styled.div`
     color: var(--neutral-lt);
     font-family: var(--font-standard);
     text-transform: uppercase;
-    font-size: 1.8rem;
-    letter-spacing: 0.05rem;
-    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
   }
   .social-container {
     display: flex;
