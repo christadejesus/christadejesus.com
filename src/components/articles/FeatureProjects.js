@@ -43,29 +43,29 @@ const FeatureProjects = () => {
             imgUrl={projectImg2}
             imgAlt="Random Quotes Generator on laptop"
             projectName="Random Quotes"
-            repoUrl="https://github.com/indychrista/freecodecamp-random-quotes-machine/tree/main"
-            demoUrl="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
+            repoUrl="https://github.com/christadejesus/freecodecamp-random-quotes-machine/tree/main"
+            demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
           />
           <ProjectGridCard
             imgUrl={projectImg5}
             imgAlt="Personal Portfolio Page on mobile"
             projectName="Portfolio Page"
-            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/PersonalPortfolioPage"
-            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/PersonalPortfolioPage/index.html"
+            repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/PersonalPortfolioPage"
+            demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/PersonalPortfolioPage/index.html"
           />
           <ProjectGridCard
             imgUrl={projectImg1}
             imgAlt="Product Landing Page on laptop"
             projectName="Landing Page"
-            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
-            demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+            repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
+            demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
           />
           <ProjectGridCard
             imgUrl={projectImg3}
             imgAlt="Palindrome Checker on tablet"
             projectName="Palindrome Check"
-            repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
-            demoUrl="https://indychrista.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
+            repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
+            demoUrl="https://christadejesus.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
           />
         </Grid4Column>
       </StandardArticle>

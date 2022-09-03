@@ -147,7 +147,7 @@ const TopNav = () => {
               <SiTwitter />
             </a>
             <a
-              href="https://github.com/indychrista"
+              href="https://github.com/christadejesus"
               target="_blank"
               rel="noreferrer"
               class="social-link"

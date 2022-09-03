@@ -24,8 +24,8 @@ const DevProjects = (props) => {
           detail2="Accessible hidden text"
           detail4="Fixed navigation"
           detail5="Responsive layout"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/PersonalPortfolioPage"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/PersonalPortfolioPage/index.html"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/PersonalPortfolioPage"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/PersonalPortfolioPage/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg2}
@@ -37,8 +37,8 @@ const DevProjects = (props) => {
           detail4="Stateful component"
           detail5="React Icons"
           detail6="Github Pages"
-          repoUrl="https://github.com/indychrista/freecodecamp-random-quotes-machine/tree/main"
-          demoUrl="https://indychrista.github.io/freecodecamp-random-quotes-machine/"
+          repoUrl="https://github.com/christadejesus/freecodecamp-random-quotes-machine/tree/main"
+          demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
         />
         <ProjectGridCardMore
           imgUrl={projectImg7}
@@ -50,8 +50,8 @@ const DevProjects = (props) => {
           detail4="FA Icons"
           detail5="HTML Form"
           detail6="Custom Banner"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg1}
@@ -63,8 +63,8 @@ const DevProjects = (props) => {
           detail4="Logo design"
           detail5="Image editing"
           detail6="Copy writing"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg3}
@@ -74,8 +74,8 @@ const DevProjects = (props) => {
           detail2="Flexbox"
           detail4="Github Pages"
           detail5="Remix Icons"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/TributePage"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/TributePage/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg4}
@@ -85,8 +85,8 @@ const DevProjects = (props) => {
           detail2="HTML Form"
           detail4="Flexbox"
           detail5="Fixed background image"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/SurveyForm"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/SurveyForm/index.html"
         />
         <ProjectGridCardMore
           imgUrl={projectImg5}
@@ -96,8 +96,8 @@ const DevProjects = (props) => {
           detail2="Scrolling Navbar"
           detail4="Fixed navigation"
           detail5="Responsive layout"
-          repoUrl="https://github.com/indychrista/freecodecamp-projects/tree/main/ResponsiveWebDesign/TechnicalDocumentation"
-          demoUrl="https://indychrista.github.io/freecodecamp-projects/ResponsiveWebDesign/TechnicalDocumentation/index.html"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/TechnicalDocumentation"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/TechnicalDocumentation/index.html"
         />
       </Grid3Column>
     </Wrapper>
