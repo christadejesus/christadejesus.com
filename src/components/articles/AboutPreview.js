@@ -9,7 +9,7 @@ import {
   SiCss3,
   SiJavascript,
   SiReact,
-  SiCanva,
+  SiFigma,
   SiInkscape,
   SiAdobephotoshop,
   SiVisualstudiocode,
@@ -115,9 +115,8 @@ const AboutPreview = (props) => {
           <div>
             <h2>Hello, I'm Christa!</h2>
             <p>
-              I'm a creative entrepreneur in Indianapolis, Indiana, who loves
-              code, development, and graphic design.{" "}
-              <FaHeart className="heart-icon" />
+              I'm a self-taught Front End Developer and Full Stack Development
+              Student from Indianapolis, Indiana.
             </p>
             <Button
               primary
@@ -165,14 +164,14 @@ const AboutPreview = (props) => {
               <SiGithub className="tech-icon" /> Github
             </li>
             <li>
+              <SiFigma className="tech-icon" /> Figma
+            </li>
+            <li>
               <SiInkscape className="tech-icon" />
               Inkscape
             </li>
             <li>
               <SiAdobephotoshop className="tech-icon" /> PS
-            </li>
-            <li>
-              <SiCanva className="tech-icon" /> Canva
             </li>
           </ul>
           <Button

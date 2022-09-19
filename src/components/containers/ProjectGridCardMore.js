@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   border-radius: 5px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--color-neutral-mdlt);
+  border: 1px solid var(--neutral-mdlt);
 
   .divider {
     margin: 0 0 20px 0;
@@ -76,7 +76,7 @@ const ProjectGridCardMore = (props) => {
       </div>
       <div className="project-btns">
         <Button
-          primary
+          secondary
           as="a"
           href={props.demoUrl}
           target="_blank"
@@ -84,7 +84,13 @@ const ProjectGridCardMore = (props) => {
         >
           Visit the demo
         </Button>
-        <Button as="a" href={props.repoUrl} target="_blank" rel="noreferrer">
+        <Button
+          primary
+          as="a"
+          href={props.repoUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
           View the code
         </Button>
       </div>

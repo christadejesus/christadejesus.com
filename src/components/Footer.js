@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FaHeart, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { VscSmiley } from "react-icons/vsc";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { SiBuymeacoffee } from "react-icons/si";
 
@@ -9,15 +10,13 @@ const FooterWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   padding: 40px 20px;
   margin-top: 40px;
   text-align: center;
   font-size: 1.6rem;
-  color: var(--neutral-mdlt);
-  background: var(--neutral-black);
+  color: var(--neutral-dk);
+  background: var(--neutral-lt);
   h2 {
-    color: var(--neutral-lt);
     font-weight: 700;
   }
   .footer-links {
@@ -28,15 +27,12 @@ const FooterWrapper = styled.div`
     max-width: 400px;
     padding: 40px 20px 0 20px;
     margin: 40px 0 20px 0;
-    border-top: 1px solid var(--neutral-dk);
+    border-top: 1px solid var(--neutral-md);
   }
   .footer-links a {
     text-transform: lowercase;
     text-decoration: none;
-    color: var(--neutral-mdlt);
-  }
-  .footer-links a:hover {
-    color: var(--primary-2);
+    color: var(--neutral-dk);
   }
   .social-container {
     display: flex;
@@ -47,15 +43,10 @@ const FooterWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    background: var(--primary-2);
-    color: var(--neutral-black);
+    background: var(--primary-1);
+    color: var(--neutral-lt);
     padding: 8px;
-    border-radius: 1px;
-  }
-  .social-link:hover {
-    background: var(--neutral-lt);
-    transform: translateY(-5px);
-    transition: 300ms ease;
+    border-radius: 2px;
   }
 `;
 const Footer = () => {
@@ -64,26 +55,18 @@ const Footer = () => {
       <h2>Let's Connect</h2>
       <div className="social-container">
         <a
-          href="https://www.facebook.com/christa.dev/"
+          href="https://www.linkedin/christa-dejesus"
           target="_blank"
           rel="noreferrer"
-          class="social-link"
+          className="social-link"
         >
-          <FaFacebookF />
-        </a>
-        <a
-          href="https://twitter.com/christa_dev"
-          target="_blank"
-          rel="noreferrer"
-          class="social-link"
-        >
-          <FaTwitter />
+          <FaLinkedinIn />
         </a>
         <a
           href="https://github.com/christadejesus"
           target="_blank"
           rel="noreferrer"
-          class="social-link"
+          className="social-link"
         >
           <FiGithub />
         </a>
@@ -96,15 +79,12 @@ const Footer = () => {
         <Link to="/projects" className="footer-link">
           Projects
         </Link>
-        <a
-          href="https://christadejesusblog.gatsbyjs.io/"
-          className="footer-link"
-        >
+        <a href="/" className="footer-link">
           Blog
         </a>
       </div>
       <p>
-        Made with <FaHeart className="heart-icon" /> and{" "}
+        Made with <VscSmiley className="smiley-icon" /> and{" "}
         <SiBuymeacoffee className="coffee-icon" /> by Christa DeJesus.
       </p>
     </FooterWrapper>

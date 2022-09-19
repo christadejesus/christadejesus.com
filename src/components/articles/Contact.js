@@ -74,9 +74,9 @@ const Contact = () => {
                 href="https://www.facebook.com/christa.dev/"
                 target="_blank"
                 rel="noreferrer"
-                class="social-link"
+                className="social-link"
               >
-                <div class="social-icon">
+                <div className="social-icon">
                   <FaFacebookF />
                 </div>{" "}
                 Join on Facebook
@@ -85,9 +85,9 @@ const Contact = () => {
                 href="https://twitter.com/christa_dev"
                 target="_blank"
                 rel="noreferrer"
-                class="social-link"
+                className="social-link"
               >
-                <div class="social-icon">
+                <div className="social-icon">
                   <FaTwitter />
                 </div>{" "}
                 Follow on Twitter
@@ -96,9 +96,9 @@ const Contact = () => {
                 href="https://github.com/christadejesus"
                 target="_blank"
                 rel="noreferrer"
-                class="social-link"
+                className="social-link"
               >
-                <div class="social-icon">
+                <div className="social-icon">
                   <FiGithub />
                 </div>
                 Connect on Github

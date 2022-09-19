@@ -15,10 +15,12 @@
     /* COLOR VARIABLES */
     --primary-1: #178889;
     --primary-2: #05a1a1;
+    --primary-3: #34cdcd;
     --accent-1: #f5a873;
     --accent-2: #ed6e58;
+    --accent-3: #ffdd89;
 
-    --neutral-black: #222;
+    --neutral-black: #333;
     --neutral-dk: #575757;
     --neutral-mddk: #8C8C8B;
     --neutral-md: #C1C1BF;
@@ -65,10 +67,13 @@ p,
 a {
     text-decoration: none;
 }    
+a:hover {
+  opacity: 80%;
+}
 .btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* REUSABLE */
@@ -76,7 +81,7 @@ a {
 .heading-accent {
     height: 5px;
     width: 60px;
-    background: var(--accent-2);
+    background: var(--primary-1);
     margin-bottom: 20px;
     margin-top: -20px;
 }
@@ -90,6 +95,10 @@ a {
 .heart-icon {
     color: var(--accent-2);
 }
-  .coffee-icon {
-    color: var(--primary-2);
-  } 
+.coffee-icon {
+  color: var(--primary-1);
+} 
+.smiley-icon {
+  background: var(--accent-3);
+  border-radius: 50%;
+}

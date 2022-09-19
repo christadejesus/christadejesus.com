@@ -1,15 +1,18 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { SiFacebook, SiTwitter, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiMenuFill } from "react-icons/ri";
 
 const NavWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 0px 40px;
   height: 70px;
   font-size: 1.8rem;
-  color: var(--neutral-lt);
-  background: var(--neutral-black);
-  border-bottom: 1px solid var(--neutral-lt);
+  background: var(--neutral-lt);
+  z-index: 1000;
 
   .nav-container {
     display: flex;
@@ -24,16 +27,13 @@ const NavWrapper = styled.div`
     gap: 20px;
   }
   .nav-link {
-    color: var(--color-neutral-dk);
+    color: var(--primary-1);
     text-transform: lowercase;
-  }
-  .nav-link:hover {
-    color: var(--primary-2);
   }
   .logo {
     display: block;
     line-height: 1;
-    color: var(--neutral-lt);
+    color: var(--primary-1);
     font-family: var(--font-standard);
     text-transform: uppercase;
     font-size: 2rem;
@@ -49,13 +49,11 @@ const NavWrapper = styled.div`
     font-size: 2rem;
     color: var(--primary-2);
   }
-  .social-link:hover {
-    color: var(--neutral-lt);
-  }
   .menu-btn {
     display: none;
-    font-size: 2.4rem;
-    color: var(--neutral-lt);
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--primary-1);
   }
 
   /* MEDIA QUERIES */
@@ -71,7 +69,7 @@ const NavWrapper = styled.div`
       flex-direction: column;
       text-align: center;
       padding: 40px 10px;
-      background: var(--neutral-black);
+      background: var(--primary-1);
       width: 0;
       height: 0;
       opacity: 0;
@@ -80,6 +78,7 @@ const NavWrapper = styled.div`
     .nav-link {
       padding: 10px;
       font-size: 2rem;
+      color: var(--neutral-white);
     }
     .active {
       width: 100%;
@@ -94,6 +93,7 @@ const NavWrapper = styled.div`
     }
     .social-link {
       font-size: 3rem;
+      color: var(--accent-3);
     }
   }
 `;
@@ -122,41 +122,29 @@ const TopNav = () => {
           <Link to="/projects" className="nav-link" onClick={toggleNav}>
             Projects
           </Link>
-          <a
-            href="https://christadejesusblog.gatsbyjs.io/"
-            className="nav-link"
-            onClick={toggleNav}
-          >
+          <a href="/" className="nav-link" onClick={toggleNav}>
             Blog
           </a>
           <div className="social-container">
             <a
-              href="https://www.facebook.com/christa.dev/"
+              href="https://www.linkedin.com/christa-dejesus"
               target="_blank"
               rel="noreferrer"
-              class="social-link"
+              className="social-link"
             >
-              <SiFacebook />
-            </a>
-            <a
-              href="https://twitter.com/christa_dev"
-              target="_blank"
-              rel="noreferrer"
-              class="social-link"
-            >
-              <SiTwitter />
+              <SiLinkedin />
             </a>
             <a
               href="https://github.com/christadejesus"
               target="_blank"
               rel="noreferrer"
-              class="social-link"
+              className="social-link"
             >
               <SiGithub />
             </a>
           </div>
         </div>
-        <button class="btn menu-btn" id="menu-btn" onClick={toggleNav}>
+        <button className="btn menu-btn" id="menu-btn" onClick={toggleNav}>
           <RiMenuFill />
         </button>
       </nav>

@@ -4,7 +4,7 @@ import Button from "../buttons/Button";
 const Wrapper = styled.div`
   border-radius: 5px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--color-neutral-mdlt);
+  border: 1px solid var(--neutral-mdlt);
 
   h3 {
     margin-bottom: 5px;
@@ -37,7 +37,7 @@ const ProjectGridCard = (props) => {
         <div className="divider"></div>
         <div className="project-btns">
           <Button
-            primary
+            secondary
             as="a"
             href={props.demoUrl}
             target="_blank"
@@ -45,7 +45,13 @@ const ProjectGridCard = (props) => {
           >
             Visit the demo
           </Button>
-          <Button as="a" href={props.repoUrl} target="_blank" rel="noreferrer">
+          <Button
+            primary
+            as="a"
+            href={props.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             View the code
           </Button>
         </div>
