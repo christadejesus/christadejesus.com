@@ -55,7 +55,7 @@ const Footer = () => {
       <h2>Let's Connect</h2>
       <div className="social-container">
         <a
-          href="https://www.linkedin/christa-dejesus"
+          href="https://linkedin/in/christa-dejesus/"
           target="_blank"
           rel="noreferrer"
           className="social-link"

@@ -127,7 +127,7 @@ const TopNav = () => {
           </a>
           <div className="social-container">
             <a
-              href="https://www.linkedin.com/christa-dejesus"
+              href="https://linkedin/in/christa-dejesus/"
               target="_blank"
               rel="noreferrer"
               className="social-link"
