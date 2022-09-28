@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d39c9bd.css",
-    "main.js": "/static/js/main.5b618d4a.js",
+    "main.css": "/static/css/main.635b22be.css",
+    "main.js": "/static/js/main.5257dbcd.js",
     "static/js/787.e26dc765.chunk.js": "/static/js/787.e26dc765.chunk.js",
-    "static/media/mockup_project-landing-page.png": "/static/media/mockup_project-landing-page.bf808c293562fb4042ed.png",
-    "static/media/mockup_techdocs.png": "/static/media/mockup_techdocs.b35c38304917e0b98402.png",
-    "static/media/screenshot-survey-form.png": "/static/media/screenshot-survey-form.6262ab424193cff50e0c.png",
-    "static/media/mockup_personal_portfolio_page.png": "/static/media/mockup_personal_portfolio_page.1b045ebfa339754d27d5.png",
-    "static/media/screenshot-tribute-page.png": "/static/media/screenshot-tribute-page.ff46e8b545c0aa69c730.png",
-    "static/media/mockup-palindrome-checker.png": "/static/media/mockup-palindrome-checker.0ee6e2a41481c6815707.png",
+    "static/media/screenshot-tribute-page.png": "/static/media/screenshot-tribute-page.9148f6fa836a525bdd1d.png",
+    "static/media/mockup-palindrome-checker.png": "/static/media/mockup-palindrome-checker.67ef408e8499f730fcc1.png",
+    "static/media/mockup_project-landing-page.png": "/static/media/mockup_project-landing-page.a0aa691a7ca073f2423c.png",
     "static/media/screenshot-random-quote.png": "/static/media/screenshot-random-quote.c540bdd6747962e975a6.png",
+    "static/media/mockup_personal_portfolio_page.png": "/static/media/mockup_personal_portfolio_page.45d126ad576a40218577.png",
+    "static/media/mockup_techdocs.png": "/static/media/mockup_techdocs.1cde41795cbcf1d30178.png",
+    "static/media/screenshot-survey-form.png": "/static/media/screenshot-survey-form.6868860907e43b8e8550.png",
+    "static/media/suite-landing-page.png": "/static/media/suite-landing-page.7f6999a6d0ad05f818cf.png",
+    "static/media/3-column-card.png": "/static/media/3-column-card.e41fbfe46d07beeff35a.png",
     "static/media/desk.png": "/static/media/desk.65bca54ef7c9f54c926e.png",
+    "static/media/nft-preview-component.png": "/static/media/nft-preview-component.cee7b34e991534acd59a.png",
+    "static/media/qr-code-component.png": "/static/media/qr-code-component.85dd0df836cf32b614d7.png",
     "static/media/wave1.png": "/static/media/wave1.2b55b2e73e4a7f840df7.png",
     "index.html": "/index.html",
-    "main.0d39c9bd.css.map": "/static/css/main.0d39c9bd.css.map",
-    "main.5b618d4a.js.map": "/static/js/main.5b618d4a.js.map",
+    "main.635b22be.css.map": "/static/css/main.635b22be.css.map",
+    "main.5257dbcd.js.map": "/static/js/main.5257dbcd.js.map",
     "787.e26dc765.chunk.js.map": "/static/js/787.e26dc765.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d39c9bd.css",
-    "static/js/main.5b618d4a.js"
+    "static/css/main.635b22be.css",
+    "static/js/main.5257dbcd.js"
   ]
 }
