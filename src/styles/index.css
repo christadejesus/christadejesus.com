@@ -16,6 +16,7 @@
     --primary-1: #178889;
     --primary-2: #05a1a1;
     --primary-3: #34cdcd;
+    --primary-4: #94dfdf;
     --accent-1: #f5a873;
     --accent-2: #ed6e58;
     --accent-3: #ffdd89;
@@ -31,7 +32,6 @@
     /* FONT VARIABLES*/
     --font-standard: 'Poppins', sans-serif;
     --font-cursive: 'Homemade Apple', cursive;
-
     font-size: 10px; /* set base font-size for easy rem calculations */
     font-family: var(--font-standard);
 } 

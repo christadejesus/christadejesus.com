@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const AccentBorder = styled.div`
-  border: 3px solid var(--color-neutral-mdlt);
+  border: 3px solid var(--neutral-lt);
   padding: 40px 20px;
   border-radius: 5px;
   width: 100%;

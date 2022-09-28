@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 10px;
   text-transform: uppercase;
   padding: 6px 12px;
   border: ${(props) =>
@@ -29,7 +34,7 @@ const Button = styled.button`
 
   &:hover {
     background: var(--neutral-black);
-    color: var(--neutral-black);
+    color: var(--neutral-lt);
     border: 1px solid var(--neutral-black);
     cursor: pointer;
   }
