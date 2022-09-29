@@ -31,7 +31,7 @@
 
     /* FONT VARIABLES*/
     --font-standard: 'Poppins', sans-serif;
-    --font-cursive: 'Homemade Apple', cursive;
+    --font-cursive: 'Homemade Apple', cursive; 
     font-size: 10px; /* set base font-size for easy rem calculations */
     font-family: var(--font-standard);
 } 
@@ -82,8 +82,8 @@ a:hover {
     height: 5px;
     width: 60px;
     background: var(--primary-1);
-    margin-bottom: 20px;
-    margin-top: -20px;
+    margin-bottom: 40px;
+    margin-top: -10px;
 }
 /* thin neutral underline */
 .divider {

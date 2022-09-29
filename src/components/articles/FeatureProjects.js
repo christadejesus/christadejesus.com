@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import projectImg1 from "../../assets/mockup_project-landing-page.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
-import projectImg3 from "../../assets/mockup-palindrome-checker.png";
+import projectImg3 from "../../assets/suite-landing-page.png";
 import projectImg5 from "../../assets/mockup_personal_portfolio_page.png";
 import Grid4Column from "../containers/Grid4Column";
 import StandardArticle from "../containers/StandardArticle";
@@ -40,6 +40,13 @@ const FeatureProjects = () => {
         <div className="heading-accent"></div>
         <Grid4Column>
           <ProjectGridCard
+            imgUrl={projectImg3}
+            imgAlt="Suite Landing Page"
+            projectName="Suite Landing Page"
+            repoUrl="https://github.com/christadejesus/frontend-mentor-repo/tree/main/suite-landing-page"
+            demoUrl="https://christadejesus.github.io/frontend-mentor-repo/suite-landing-page/index.html"
+          />
+          <ProjectGridCard
             imgUrl={projectImg2}
             imgAlt="Random Quotes Generator on laptop"
             projectName="Random Quotes"
@@ -59,13 +66,6 @@ const FeatureProjects = () => {
             projectName="Landing Page"
             repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
             demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
-          />
-          <ProjectGridCard
-            imgUrl={projectImg3}
-            imgAlt="Palindrome Checker on tablet"
-            projectName="Palindrome Check"
-            repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/JavaScriptDSAlgorithms/PalindromeChecker"
-            demoUrl="https://christadejesus.github.io/freecodecamp-projects/JavaScriptDSAlgorithms/PalindromeChecker/index.html"
           />
         </Grid4Column>
       </StandardArticle>
