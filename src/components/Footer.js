@@ -11,13 +11,13 @@ const FooterWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  margin-top: 40px;
   text-align: center;
   font-size: 1.6rem;
   color: var(--neutral-dk);
   background: var(--neutral-lt);
   h2 {
     font-weight: 700;
+    color: var(--neutral-black);
   }
   .footer-links {
     display: flex;
@@ -79,9 +79,12 @@ const Footer = () => {
         <Link to="/projects" className="footer-link">
           Projects
         </Link>
-        <a href="/" className="footer-link">
+        <Link to="/styleguide" className="footer-link">
+          Styleguide
+        </Link>
+        {/*<a href="/" className="footer-link">
           Blog
-        </a>
+  </a>*/}
       </div>
       <p>
         Made with <VscSmiley className="smiley-icon" /> and{" "}

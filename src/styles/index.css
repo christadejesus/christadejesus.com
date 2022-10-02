@@ -1,7 +1,7 @@
-/* RESET */
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Corinthia:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -15,11 +15,11 @@
     /* COLOR VARIABLES */
     --primary-1: #178889;
     --primary-2: #05a1a1;
-    --primary-3: #34cdcd;
+    --primary-3: #53c8c8;
     --primary-4: #94dfdf;
-    --accent-1: #f5a873;
-    --accent-2: #ed6e58;
-    --accent-3: #ffdd89;
+    --accent-1: #ffdd89;
+    --accent-2: #ffe9b2;
+    --accent-3: #ed6e58;
 
     --neutral-black: #333;
     --neutral-dk: #575757;
@@ -30,8 +30,10 @@
     --neutral-white: #fff;
 
     /* FONT VARIABLES*/
-    --font-standard: 'Poppins', sans-serif;
-    --font-cursive: 'Homemade Apple', cursive; 
+    --font-standard: 'Open Sans', sans-serif;
+    --font-cursive: 'Corinthia', cursive; 
+    --font-sans-alt: 'Bebas Neue', sans-serif;
+    --font-serif: 'Brygada 1918', serif;
     font-size: 10px; /* set base font-size for easy rem calculations */
     font-family: var(--font-standard);
 } 
@@ -40,34 +42,49 @@
 body {
     font-size: 1.8rem;
 }
-p,
-  h2,
-  h3,
-  h4 {
-    margin-bottom: 20px;
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
+}
+h4, h5, h6 {
+  font-family: var(--font-sans-alt);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  margin: 0px 0px 20px 0px;
+}
+p {
+  line-height: 1.5;
+  margin: 20px 0px;
   }
-  h1 {
-    font-size: 3.2rem;
-    text-align: center;
-  }
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-  }
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: lowercase;
-  }
+blockquote {
+  border-left: 5px solid var(--neutral-md);
+  padding-left: 10px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+
+/* BUTTONS & LINKS */
 a {
+    color: var(--primary-1);
+    font-weight: 500;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
 }    
 a:hover {
+  border-bottom: 2px solid var(--primary-1);
   opacity: 80%;
 }
 .btn {
@@ -75,16 +92,108 @@ a:hover {
   border: none;
   cursor: pointer;
 }
+.back-to-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    border: none;
+  }
+.back-to-top:hover {
+    border: none;
+  }
 
-/* REUSABLE */
+/* LISTS */
+ul, ol {
+  list-style: none;
+}
+.list-disc {
+  list-style: disc;
+  margin-left: 20px;
+}
+.list-disc li {
+  margin-bottom: 10px;
+}
+
+/* HEADING STYLES */
+.heading-group {
+  width: fit-content;
+}
+.fancy {
+  display: block;
+  width: fit-content;
+  font-family: var(--font-cursive);
+  font-size: 3.4rem;
+  opacity: 40%;
+  line-height: 0;
+  padding-left: 2px;
+  padding-top: 20px;
+  margin-bottom: 6px;
+}
+.fancy-large {
+  font-size: 4rem;
+}
+.fancy-center {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* thick colorful underline */
 .heading-accent {
     height: 5px;
     width: 60px;
     background: var(--primary-1);
+    margin-top: -30px;
     margin-bottom: 40px;
-    margin-top: -10px;
 }
+
+/* CODE */
+pre {
+  width: 100%;
+  overflow: scroll;
+  margin: 40px 0px;
+  padding: 10px;
+  background: var(--neutral-mdlt);
+}
+pre code {
+  padding: 0px;
+}
+code {
+  padding: 0px 10px;
+  background: var(--neutral-mdlt);
+  font-family: monospace;
+}
+
+/* CONTAINERS */
+article, section {
+  width: 100%;
+}
+/* This helps keep the white space between sections/articles visually even. */
+article p:last-child, section p:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.content-area {
+  width: 100%;
+  padding: 40px 20px;
+}
+.content-area-lt {
+  background: var(--neutral-lt);
+}
+.content-area-primary {
+  background: var(--primary-1);
+  color: var(--neutral-lt);
+}
+.content-area-accent {
+  background: var(--accent-1);
+}
+.buttons-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* DESIGN ELEMENTS */
 /* thin neutral underline */
 .divider {
     height: 1px;
@@ -93,12 +202,42 @@ a:hover {
     margin: 20px 0 40px 0;
 }
 .heart-icon {
-    color: var(--accent-2);
+    color: var(--accent-3);
 }
 .coffee-icon {
   color: var(--primary-1);
 } 
 .smiley-icon {
-  background: var(--accent-3);
+  background: var(--accent-2);
   border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 700px) {
+  .content-area {
+  padding: 40px;
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  h4, h5, h6 {
+    font-size: 3rem;
+  }
+  .fancy {
+    font-size: 4rem;
+  }
+  .fancy-large {
+    font-size: 5rem;
+  }
+  .content-area {
+    padding: 60px 40px; /* A little more space to breath! */   
+  }
+}
 }

@@ -5,18 +5,16 @@ const MainContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
   width: 100%;
-  padding: 20px;
-  font-family: var(--font-standard);
-  font-size: 1.8rem;
+  margin: 20px auto;
 
   /* MEDIA QUERIES */
   @media screen and (min-width: 700px) {
-    padding: 40px 10%;
+    padding: 20px 40px;
   }
   @media screen and (min-width: 1000px) {
-    gap: 60px;
+    padding: 20px 10%;
+    max-width: 1100px;
   }
 `;
 export default MainContentWrapper;

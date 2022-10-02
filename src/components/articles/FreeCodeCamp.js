@@ -7,23 +7,18 @@ import projectImg5 from "../../assets/mockup_techdocs.png";
 import projectImg6 from "../../assets/mockup_personal_portfolio_page.png";
 import projectImg7 from "../../assets/mockup-palindrome-checker.png";
 import ProjectGalleryCard from "../containers/ProjectGalleryCard";
-import Grid4Column from "../containers/Grid4Column";
+import Grid3Column from "../containers/Grid3Column";
 
-const Wrapper = styled.div`
-  h3 {
-    font-family: var(--font-cursive);
-    font-size: 2.6rem;
-    margin: 40px 0px 20px 0px;
-    text-transform: none;
-    letter-spacing: 0.2rem;
-  }
-`;
+const Wrapper = styled.section``;
 
 const FreeCodeCamp = (props) => {
   return (
-    <Wrapper>
-      <h3>freeCodeCamp</h3>
-      <Grid4Column>
+    <Wrapper className="content-area">
+      <div className="heading-group">
+        <h3>freeCodeCamp</h3>
+        <div className="heading-accent"></div>
+      </div>
+      <Grid3Column>
         <ProjectGalleryCard
           imgUrl={projectImg6}
           imgAlt="Personal Portfolio Page demo on mobile screen"
@@ -66,7 +61,7 @@ const FreeCodeCamp = (props) => {
           projectName="Tech Docs"
           demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/TechnicalDocumentation/index.html"
         />
-      </Grid4Column>
+      </Grid3Column>
     </Wrapper>
   );
 };

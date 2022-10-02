@@ -7,6 +7,10 @@ const Wrapper = styled.div`
   border: 1px solid var(--neutral-mdlt);
 
   h3 {
+    font-size: 2rem;
+    font-family: var(--font-standard);
+    font-weight: 500;
+    text-transform: lowercase;
     margin-bottom: 5px;
   }
   .project-btns {
@@ -36,23 +40,11 @@ const ProjectGridCard = (props) => {
         <h3>{props.projectName}</h3>
         <div className="divider"></div>
         <div className="project-btns">
-          <Button
-            secondary
-            as="a"
-            href={props.demoUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Visit the demo
+          <Button as="a" href={props.demoUrl} target="_blank" rel="noreferrer">
+            view demo
           </Button>
-          <Button
-            primary
-            as="a"
-            href={props.repoUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            View the code
+          <Button as="a" href={props.repoUrl} target="_blank" rel="noreferrer">
+            view code
           </Button>
         </div>
       </div>

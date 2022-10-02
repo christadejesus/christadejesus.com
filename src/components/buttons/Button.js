@@ -9,10 +9,8 @@ const Button = styled.button`
   text-transform: uppercase;
   padding: 6px 12px;
   border: ${(props) =>
-    props.primary
-      ? "1px solid var(--primary-1)"
-      : props.secondary
-      ? "1px solid var(--neutral-dk)"
+    props.primary || props.secondary
+      ? "1px solid transparent"
       : "1px solid var(--neutral-black)"};
   border-radius: 2px;
   font-weight: 500;
@@ -24,19 +22,17 @@ const Button = styled.button`
       ? "var(--primary-1)"
       : props.secondary
       ? "var(--neutral-black)"
-      : "var(--neutral-white"};
+      : "transparent"};
   color: ${(props) =>
-    props.primary
-      ? "var(--neutral-white)"
-      : props.secondary
+    props.primary || props.secondary
       ? "var(--neutral-white)"
       : "var(--neutral-black)"};
 
   &:hover {
     background: var(--neutral-black);
     color: var(--neutral-lt);
-    border: 1px solid var(--neutral-black);
     cursor: pointer;
+    border: 1px solid transparent;
   }
 `;
 

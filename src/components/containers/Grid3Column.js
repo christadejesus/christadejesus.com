@@ -5,12 +5,10 @@ const Grid3Column = styled.div`
   grid-template-columns: 1fr;
   grid-gap: 40px;
   width: 100%;
+  margin: 0px 0px 40px 0px;
 
   /* MEDIA QUERIES */
-  @media screen and (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;

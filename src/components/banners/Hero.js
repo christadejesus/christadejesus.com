@@ -3,7 +3,7 @@ import heroBackground from "../../assets/wave1.png";
 import heroGraphic from "../../assets/desk.png";
 import Button from "../buttons/Button";
 
-const HeroWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,20 +28,11 @@ const HeroWrapper = styled.div`
     max-width: 550px;
     text-align: center;
   }
-  h1 {
-    font-size: 3rem;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 20px;
-    color: var(--neutral-black);
+  .hero-text h1 {
+    margin-bottom: 0;
   }
   .hero-text p {
     color: var(--neutral-dk);
-  }
-  .hero-btn {
-    width: fit-content;
-    background: var(--primary-1);
   }
   @media screen and (min-width: 900px) {
     flex-direction: row;
@@ -63,19 +54,22 @@ const HeroWrapper = styled.div`
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <Wrapper>
       <img src={heroGraphic} alt="computer desk graphic" className="hero-img" />
       <div className="hero-text">
-        <h1>Hello, I'm Christa.</h1>
+        <div className="heading-group">
+          <span className="fancy fancy-large fancy-center">hey there!</span>
+          <h1>I'm Christa</h1>
+        </div>
         <p>
-          I'm a self-taught Front End Developer and Full Stack Development
-          student from Indianapolis, Indiana.
+          I'm a Front End Developer from Indianapolis, Indiana on a Full Stack
+          Web Development journey.
         </p>
         <Button primary className="hero-btn">
           Connect on Github
         </Button>
       </div>
-    </HeroWrapper>
+    </Wrapper>
   );
 };
 

@@ -34,11 +34,10 @@ const NavWrapper = styled.div`
     display: block;
     line-height: 1;
     color: var(--primary-1);
-    font-family: var(--font-standard);
-    text-transform: uppercase;
+    font-family: var(--font-sans-alt);
     font-size: 2rem;
-    letter-spacing: 0.1rem;
-    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
   }
   .social-container {
     display: flex;
@@ -93,7 +92,7 @@ const NavWrapper = styled.div`
     }
     .social-link {
       font-size: 3rem;
-      color: var(--accent-3);
+      color: var(--accent-1);
     }
   }
 `;
@@ -122,9 +121,12 @@ const TopNav = () => {
           <Link to="/projects" className="nav-link" onClick={toggleNav}>
             Projects
           </Link>
-          <a href="/" className="nav-link" onClick={toggleNav}>
+          <Link to="/styleguide" className="nav-link" onClick={toggleNav}>
+            Styleguide
+          </Link>
+          {/*<a href="/" className="nav-link" onClick={toggleNav}>
             Blog
-          </a>
+  </a>*/}
           <div className="social-container">
             <a
               href="https://linkedin.com/in/christa-dejesus/"

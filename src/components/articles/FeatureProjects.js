@@ -2,12 +2,12 @@ import styled from "styled-components";
 import projectImg1 from "../../assets/mockup_project-landing-page.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
 import projectImg3 from "../../assets/suite-landing-page.png";
-import projectImg5 from "../../assets/mockup_personal_portfolio_page.png";
-import Grid4Column from "../containers/Grid4Column";
-import StandardArticle from "../containers/StandardArticle";
+import Grid3Column from "../containers/Grid3Column";
 import ProjectGridCard from "../containers/ProjectGridCard";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   .project-btns {
     display: flex;
     flex-wrap: wrap;
@@ -24,51 +24,42 @@ const Wrapper = styled.div`
   .project-card img {
     border-radius: 4px 4px 0px 0px;
   }
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px 0px 10px;
+  .arrow-right {
+    font-size: 1.4rem;
   }
 `;
 
 const FeatureProjects = () => {
   return (
-    <Wrapper>
-      <StandardArticle id="feature-projects">
-        <h2>Featured Projects</h2>
-        <div className="heading-accent"></div>
-        <Grid4Column>
-          <ProjectGridCard
-            imgUrl={projectImg3}
-            imgAlt="Suite Landing Page"
-            projectName="Suite Landing Page"
-            repoUrl="https://github.com/christadejesus/frontend-mentor-repo/tree/main/suite-landing-page"
-            demoUrl="https://christadejesus.github.io/frontend-mentor-repo/suite-landing-page/index.html"
-          />
-          <ProjectGridCard
-            imgUrl={projectImg2}
-            imgAlt="Random Quotes Generator on laptop"
-            projectName="Random Quotes"
-            repoUrl="https://github.com/christadejesus/freecodecamp-random-quotes-machine/tree/main"
-            demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
-          />
-          <ProjectGridCard
-            imgUrl={projectImg5}
-            imgAlt="Personal Portfolio Page on mobile"
-            projectName="Portfolio Page"
-            repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/PersonalPortfolioPage"
-            demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/PersonalPortfolioPage/index.html"
-          />
-          <ProjectGridCard
-            imgUrl={projectImg1}
-            imgAlt="Product Landing Page on laptop"
-            projectName="Landing Page"
-            repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
-            demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
-          />
-        </Grid4Column>
-      </StandardArticle>
+    <Wrapper className="content-area">
+      <h2>Featured Projects</h2>
+      <div className="heading-accent"></div>
+      <Grid3Column>
+        <ProjectGridCard
+          imgUrl={projectImg3}
+          imgAlt="Suite Landing Page"
+          projectName="Suite Landing Page"
+          repoUrl="https://github.com/christadejesus/frontend-mentor-repo/tree/main/suite-landing-page"
+          demoUrl="https://christadejesus.github.io/frontend-mentor-repo/suite-landing-page/index.html"
+        />
+        <ProjectGridCard
+          imgUrl={projectImg2}
+          imgAlt="Random Quotes Generator on laptop"
+          projectName="Random Quotes"
+          repoUrl="https://github.com/christadejesus/freecodecamp-random-quotes-machine/tree/main"
+          demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
+        />
+        <ProjectGridCard
+          imgUrl={projectImg1}
+          imgAlt="Product Landing Page on laptop"
+          projectName="Landing Page"
+          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
+          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+        />
+      </Grid3Column>
+      <Link to="/projects">
+        See more development projects <FaArrowRight className="arrow-right" />
+      </Link>
     </Wrapper>
   );
 };
