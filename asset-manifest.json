@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9e6e6ed4.css",
-    "main.js": "/static/js/main.e9772845.js",
+    "main.js": "/static/js/main.3d99a487.js",
     "static/js/787.e26dc765.chunk.js": "/static/js/787.e26dc765.chunk.js",
     "static/media/screenshot-tribute-page.png": "/static/media/screenshot-tribute-page.9148f6fa836a525bdd1d.png",
     "static/media/mockup-palindrome-checker.png": "/static/media/mockup-palindrome-checker.67ef408e8499f730fcc1.png",
@@ -18,11 +18,11 @@
     "static/media/wave1.png": "/static/media/wave1.2b55b2e73e4a7f840df7.png",
     "index.html": "/index.html",
     "main.9e6e6ed4.css.map": "/static/css/main.9e6e6ed4.css.map",
-    "main.e9772845.js.map": "/static/js/main.e9772845.js.map",
+    "main.3d99a487.js.map": "/static/js/main.3d99a487.js.map",
     "787.e26dc765.chunk.js.map": "/static/js/787.e26dc765.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e6e6ed4.css",
-    "static/js/main.e9772845.js"
+    "static/js/main.3d99a487.js"
   ]
 }
