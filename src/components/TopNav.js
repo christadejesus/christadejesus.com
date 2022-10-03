@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiMenuFill } from "react-icons/ri";
+import logo from "../assets/logo192.png";
 
 const NavWrapper = styled.div`
   position: fixed;
@@ -14,6 +15,9 @@ const NavWrapper = styled.div`
   background: var(--neutral-lt);
   z-index: 1000;
 
+  a {
+    border: none;
+  }
   .nav-container {
     display: flex;
     flex-direction: row;
@@ -30,7 +34,17 @@ const NavWrapper = styled.div`
     color: var(--primary-1);
     text-transform: lowercase;
   }
-  .logo {
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-img {
+    max-width: 50px;
+    border-radius: 3px;
+  }
+  .logo-name span {
     display: block;
     line-height: 1;
     color: var(--primary-1);
@@ -64,7 +78,7 @@ const NavWrapper = styled.div`
     .nav-links {
       position: absolute;
       right: 0px;
-      top: 60px;
+      top: 70px;
       flex-direction: column;
       text-align: center;
       padding: 40px 10px;
@@ -110,8 +124,11 @@ const TopNav = () => {
       <nav className="nav-container">
         <Link to="/" onClick={toggleNav}>
           <div className="logo-container">
-            <span className="logo logo-first">Christa</span>
-            <span className="logo logo-last">DeJesus</span>
+            <img src={logo} alt="logo" className="logo-img" />
+            <div className="logo-name">
+              <span className="logo-first">Christa</span>
+              <span className="logo-last">DeJesus</span>
+            </div>
           </div>
         </Link>
         <div className="nav-links" id="nav-links">

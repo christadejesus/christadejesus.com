@@ -15,10 +15,7 @@ const FooterWrapper = styled.div`
   font-size: 1.6rem;
   color: var(--neutral-dk);
   background: var(--neutral-lt);
-  h2 {
-    font-weight: 700;
-    color: var(--neutral-black);
-  }
+
   .footer-links {
     display: flex;
     align-items: center;

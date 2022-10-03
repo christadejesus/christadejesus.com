@@ -1,10 +1,10 @@
 import MainContentWrapper from "./containers/MainContentWrapper";
 import logo from "../assets/logo192.png";
 import Button from "./buttons/Button";
-import { FaArrowUp, FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+import { FaArrowUp } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
+import { VscSmiley } from "react-icons/vsc";
 
 const Wrapper = styled.div`
   header {
@@ -37,6 +37,16 @@ const Wrapper = styled.div`
     color: var(--accent-1);
     opacity: initial;
     border: none;
+  }
+  .smiley-flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    border-radius: 5px;
+    max-width: 100px;
   }
   .colors-container {
     display: flex;
@@ -87,6 +97,9 @@ const Styleguide = () => {
         </div>
         <aside>
           <nav id="styleguide-nav">
+            <Link to="#about" className="styleguide-link">
+              About
+            </Link>
             <Link to="#logos" className="styleguide-link">
               Logos
             </Link>
@@ -120,10 +133,37 @@ const Styleguide = () => {
       <MainContentWrapper>
         <section className="content-area">
           <div className="heading-group">
+            <h2 id="about">About</h2>
+            <div className="heading-accent"></div>
+          </div>
+          <p>
+            If you want to dive into the colors, fonts, style and structure of
+            this project, you're in the right place!
+          </p>
+          <p>
+            You can use the links at the top of this page to go directly to any
+            section or wander as you wish. If you really want to geek out with
+            me and check out the code, I've got a button for that, too!
+          </p>
+          <div className="smiley-flex">
+            Enjoy! <VscSmiley className="smiley-icon" />
+          </div>
+          <Button
+            primary
+            as="a"
+            href="https://github.com/christadejesus/christadejesus.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Visit the Github Repo
+          </Button>
+        </section>
+        <section className="content-area">
+          <div className="heading-group">
             <h2 id="logos">Logos</h2>
             <div className="heading-accent"></div>
           </div>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </section>
         <section className="content-area">
           <div className="heading-group">
