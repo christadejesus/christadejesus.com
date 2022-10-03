@@ -364,7 +364,7 @@ const Styleguide = () => {
           </div>
           <ul className="list-disc">
             <li>
-              This website is built with <strong>React</strong> and
+              This website is built with <strong>React</strong> and{" "}
               <strong>Styled Components</strong> with additional CSS
               stylesheets.
             </li>
