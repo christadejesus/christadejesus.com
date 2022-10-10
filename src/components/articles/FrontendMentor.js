@@ -3,6 +3,7 @@ import projectImg1 from "../../assets/suite-landing-page.png";
 import projectImg2 from "../../assets/nft-preview-component.png";
 import projectImg3 from "../../assets/3-column-card.png";
 import projectImg4 from "../../assets/qr-code-component.png";
+import projectImg5 from "../../assets/chatAppCSSIllustration.png";
 import ProjectGalleryCard from "../containers/ProjectGalleryCard";
 import Grid3Column from "../containers/Grid3Column";
 
@@ -16,6 +17,12 @@ const FrontendMentor = (props) => {
         <div className="heading-accent"></div>
       </div>
       <Grid3Column>
+        <ProjectGalleryCard
+          imgUrl={projectImg5}
+          imgAlt="Chat App CSS Animation"
+          projectName="Chat App CSS Animation"
+          demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
+        />
         <ProjectGalleryCard
           imgUrl={projectImg1}
           imgAlt="Suite Landing Page"

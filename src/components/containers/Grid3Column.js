@@ -10,6 +10,7 @@ const Grid3Column = styled.div`
   /* MEDIA QUERIES */
   @media screen and (min-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
   }
 `;
 

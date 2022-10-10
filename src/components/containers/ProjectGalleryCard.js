@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   h4 {
     color: var(--primary-1);
     margin-top: 10px;
+    padding: 0px 4px;
   }
   .gallery-img {
     border-radius: 5px 5px 0px 0px;

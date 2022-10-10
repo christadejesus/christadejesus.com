@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import projectImg1 from "../../assets/mockup_project-landing-page.png";
+import projectImg1 from "../../assets/chatAppCSSIllustration.png";
 import projectImg2 from "../../assets/screenshot-random-quote.png";
 import projectImg3 from "../../assets/suite-landing-page.png";
 import Grid3Column from "../containers/Grid3Column";
@@ -36,11 +36,11 @@ const FeatureProjects = () => {
       <div className="heading-accent"></div>
       <Grid3Column>
         <ProjectGridCard
-          imgUrl={projectImg3}
-          imgAlt="Suite Landing Page"
-          projectName="Suite Landing Page"
-          repoUrl="https://github.com/christadejesus/frontend-mentor-repo/tree/main/suite-landing-page"
-          demoUrl="https://christadejesus.github.io/frontend-mentor-repo/suite-landing-page/index.html"
+          imgUrl={projectImg1}
+          imgAlt="Chat App CSS Animation"
+          projectName="Chat App Animation"
+          repoUrl="https://github.com/christadejesus/frontend-mentor-repo/tree/main/chat-app-css-illustration"
+          demoUrl="https://christadejesus.github.io/frontend-mentor-repo/chat-app-css-illustration/index.html"
         />
         <ProjectGridCard
           imgUrl={projectImg2}
@@ -50,11 +50,11 @@ const FeatureProjects = () => {
           demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
         />
         <ProjectGridCard
-          imgUrl={projectImg1}
-          imgAlt="Product Landing Page on laptop"
-          projectName="Landing Page"
-          repoUrl="https://github.com/christadejesus/freecodecamp-projects/tree/main/ResponsiveWebDesign/ProductLandingPage"
-          demoUrl="https://christadejesus.github.io/freecodecamp-projects/ResponsiveWebDesign/ProductLandingPage/index.html"
+          imgUrl={projectImg3}
+          imgAlt="Suite Landing Page"
+          projectName="Suite Landing Page"
+          repoUrl="https://github.com/christadejesus/frontend-mentor-repo/tree/main/suite-landing-page"
+          demoUrl="https://christadejesus.github.io/frontend-mentor-repo/suite-landing-page/index.html"
         />
       </Grid3Column>
       <Link to="/projects">

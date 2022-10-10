@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { VscSmiley } from "react-icons/vsc";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { SiBuymeacoffee } from "react-icons/si";
 
@@ -51,6 +51,14 @@ const Footer = () => {
     <FooterWrapper>
       <h2>Let's Connect</h2>
       <div className="social-container">
+        <a
+          href="https://twitter.com/christa_dev"
+          target="_blank"
+          rel="noreferrer"
+          className="social-link"
+        >
+          <FaTwitter />
+        </a>
         <a
           href="https://linkedin.com/in/christa-dejesus/"
           target="_blank"

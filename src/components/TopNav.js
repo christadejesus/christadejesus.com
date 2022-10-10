@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { SiLinkedin, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiTwitter } from "react-icons/si";
 import { RiMenuFill } from "react-icons/ri";
 import logo from "../assets/logo192.png";
 
@@ -103,10 +103,11 @@ const NavWrapper = styled.div`
     }
     .social-container {
       gap: 20px;
+      padding-top: 20px;
     }
     .social-link {
       font-size: 3rem;
-      color: var(--accent-1);
+      color: var(--neutral-white);
     }
   }
 `;
@@ -145,6 +146,14 @@ const TopNav = () => {
             Blog
   </a>*/}
           <div className="social-container">
+            <a
+              href="https://twitter.com/christa_dev"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <SiTwitter />
+            </a>
             <a
               href="https://linkedin.com/in/christa-dejesus/"
               target="_blank"
