@@ -21,7 +21,7 @@ const FrontendMentor = (props) => {
           imgUrl={projectImg5}
           imgAlt="Chat App CSS Animation"
           projectName="Chat App CSS Animation"
-          demoUrl="https://christadejesus.github.io/freecodecamp-random-quotes-machine/"
+          demoUrl="https://christadejesus.github.io/frontend-mentor-repo/chat-app-css-illustration/index.html"
         />
         <ProjectGalleryCard
           imgUrl={projectImg1}
